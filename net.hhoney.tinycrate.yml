@@ -17,14 +17,17 @@ modules:
 
   - type: git
     url: https://github.com/HarmonyHoney/tiny_crate.git
-    commit: 0bbd650e725e9052e590cc7660e1d281f9cf069d
+    tag: 2025.02.23
+    commit: 80acca522b9103442875f052c806127652c3651a
 
   - type: file
-    url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.1.16/Tiny-Crate.pck
-    sha256: ccf01fa100fe876e2a5d222f4cc7e60f57d2e09728f9948a188fa9ea4540d01b
+    url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.02.23/tinycrate-linux.pck
+    sha256: b0332e49bbc0d51f2d67ee74c0166c0915b1d7ea33fe52ff9e9fc55eb8b3feb7
 
   build-commands:
-  - install -Dm644 Tiny-Crate.pck ${FLATPAK_DEST}/bin/godot-runner.pck
+  - install -Dm644 tinycrate-linux.pck ${FLATPAK_DEST}/bin/godot-runner.pck
   - install -Dm644 linux/${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
   - install -Dm644 linux/${FLATPAK_ID}.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+  - install -Dm644 linux/${FLATPAK_ID}-symbolic.svg ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg
   - install -Dm644 linux/${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
+  
