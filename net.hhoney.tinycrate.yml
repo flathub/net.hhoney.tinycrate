@@ -24,8 +24,8 @@ modules:
       tag-query: .tag_name
 
   - type: file
-    url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.03.03/Tiny-Crate.pck
-    sha256: 0676a860b287c505ee6ca8da42f29141b6fa2b245c5eea684ce50f2d2e368c8f
+    url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.03.03/tinycrate-linux.pck
+    sha256: ccf01fa100fe876e2a5d222f4cc7e60f57d2e09728f9948a188fa9ea4540d01b
     x-checker-data:
       type: json
       url: https://api.github.com/repos/HarmonyHoney/tiny_crate/releases/latest
