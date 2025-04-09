@@ -33,7 +33,7 @@ modules:
       url-query: .assets[] | select(.name=='tinycrate-linux.pck') | .browser_download_url
 
   build-commands:
-  - install -Dm644 Tiny-Crate.pck ${FLATPAK_DEST}/bin/godot-runner.pck
+  - install -Dm644 tinycrate-linux.pck ${FLATPAK_DEST}/bin/godot-runner.pck
   - install -Dm644 linux/${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
   - install -Dm644 linux/${FLATPAK_ID}.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
   - install -Dm644 linux/${FLATPAK_ID}-symbolic.svg ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg
