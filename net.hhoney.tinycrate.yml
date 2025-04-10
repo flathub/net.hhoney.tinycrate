@@ -30,7 +30,7 @@ modules:
       type: json
       url: https://api.github.com/repos/HarmonyHoney/tiny_crate/releases/latest
       version-query: .tag_name
-      url-query: .assets[] | select(.name=='tinycrate-linux.pck') | .browser_download_url
+      url-query: '"https://github.com/HarmonyHoney/tiny_crate/releases/download/" + $version + "/tinycrate-ci-" + $version + ".pck"'
 
   build-commands:
   - install -Dm644 tinycrate-linux.pck ${FLATPAK_DEST}/bin/godot-runner.pck
