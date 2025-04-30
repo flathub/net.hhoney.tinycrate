@@ -16,15 +16,15 @@ modules:
     sources:
       - type: git
         url: https://github.com/HarmonyHoney/tiny_crate.git
-        tag: 2025.03.05
-        commit: 3b7c2b1830888ce86fe3053c33d3996f25579ac1
+        tag: 2025.04.29
+        commit: 4d4c6db230c753c0c0a9b2fd201646e37dc15816
         x-checker-data:
           type: json
           url: https://api.github.com/repos/HarmonyHoney/tiny_crate/releases/latest
           tag-query: .tag_name
       - type: file
-        url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.03.05/tinycrate-ci-2025.03.05.pck
-        sha256: 9d9c0513a7cf27e2635407391d576a1b34223496bce2713c58778ccab8de3607
+        url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2025.04.29/tinycrate-ci-2025.04.29.pck
+        sha256: 4bd2b55a2258ca9ff8fd5d1bc6345da353ab235c9306209c55034ecb73a8008d
         dest-filename: godot-runner.pck
         x-checker-data:
           type: json
